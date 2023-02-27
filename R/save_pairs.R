@@ -78,15 +78,7 @@ save_pairs <- function(names_file=NULL, unwantedpairs_file = NULL, no_of_tries =
       message('Sufficiently many random pairs have been generated for every one to have a match (for an even number of names).')
       break
     }
-  }
-  
-  if(nrow(clean_rpairs) < n_unique_pairs){
-    stop(paste0(
-    'After ', no_of_tries, ' attempts, an insufficient number of random pairs has been generated for everyone to have a match. 
-    This is due to the number of unwanted pairs provided constraining the number of combinations available to build a round where everyone appears only once. 
-    Please try running the function again to see if sufficient pairs are generated, or alternatively remove some unwanted pairs.'))
-  }
-  
+    
   # Write pairs to a file
   readr::write_csv(clean_rpairs, "randompairs.csv", col_names = FALSE)
   
