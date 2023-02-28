@@ -97,4 +97,3 @@ save_pairs <- function(names_file=NULL, unwantedpairs_file = NULL, no_of_tries =
     message('The newly matched pairs were added to a new unwanted pairs file called "unwantedpairs.csv".')
   }
   
-}
