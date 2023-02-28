@@ -95,4 +95,4 @@ save_pairs <- function(names_file=NULL, unwantedpairs_file = NULL, no_of_tries =
   else{
     readr::write_csv(clean_rpairs, "unwantedpairs.csv", col_names = FALSE)
     message('The newly matched pairs were added to a new unwanted pairs file called "unwantedpairs.csv".')
-  
+  }
