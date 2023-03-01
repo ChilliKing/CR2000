@@ -14,7 +14,7 @@
 #' @examples \dontrun{
 #' save_pairs(names_file = 'names.csv', unwantedpairs_file = 'unwantedpairs.csv')
 #'}
-save_pairs <- function(names_file=NULL, unwantedpairs_file = NULL, no_of_tries = 100000){
+save_pairs <- function(names_file=NULL, unwantedpairs_file = NULL, no_of_tries = 500){
   
   # Error handling for NULL file names
   if(is.null(names_file)){
